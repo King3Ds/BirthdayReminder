@@ -1,0 +1,22 @@
+{
+    "manifest_version": 3,
+    "name": "The B-Day Reminder",
+    "version": "0.0.1",
+    "description": "Convenient way to not forget your friends' birthdays.",
+    "action": {
+        "default_popup": "addPopup/popup.html"
+    },
+
+    "background": {
+        "service_worker": "background.js",
+        "type": "module"
+    },
+
+    "permissions": ["storage", "alarms", "activeTab"],
+
+    "icons": {
+        "48": "images/icon48.png",
+        "96": "images/icon96.png"
+    }
+
+}
