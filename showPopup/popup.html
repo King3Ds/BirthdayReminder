@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>showBirthdayPopup</title>
+    <link rel="stylesheet" href="../addPopup/bulma.min.css">
+    <link rel="stylesheet" href="../showPopup/popup.css">
+
+</head>
+<body>
+
+    <section class="hero is-primary is-small has-text-centered">
+        <div class="hero-body">
+        <p class="title">
+            The B-Day Reminder
+        </p>
+        <p class="subtitle">
+            List of b-days below :)
+        </p>
+        </div>
+    </section>
+    
+    <div class="container mt-3 is-marginless">
+        <div class="scrollable-content" id="allReminderContainer">
+            <ul class="list">
+                <li class="reminder box is-fullwidth">
+                    <div class="actions">
+                        <div class="text">Tommy Trojan</div>
+                        <button class="delete is-small is-pulled-right"></button>
+                    </div>
+                    <div class="text">Birthday: June 20, 2024</div>
+                    <div class="text">Reminder: May 19, 2024 @ 7:30pm</div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="container is-small has-text-centered is-fixed-bottom m-3">
+        <a class="button is-small is-text" href="../addPopup/popup.html" id="addBirthday">add b-day</a>
+        <a class="button is-small is-text" href="popup.html" id="showBirthday">b-day list</a>
+    </div>
+
+    <script src="popup.js"></script>
+
+</body>
+
+</html>

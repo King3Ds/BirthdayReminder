@@ -1,0 +1,13 @@
+body {
+    width: 355px;
+    height: 450px;
+}
+
+.scrollable-content {
+    height: 280px; /* Set a maximum height for the scrollable area */
+    width: 340px;
+    overflow-y: auto; 
+    background-color: #ddd;
+    padding: 10px;
+    margin: 7.5px auto;
+  }
