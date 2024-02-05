@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>addBirthdayPopup</title>
+    <link rel="stylesheet" href="bulma.min.css">
+    <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+
+    <section class="hero is-primary is-small has-text-centered">
+        <div class="hero-body">
+          <p class="title">
+            The B-Day Reminder
+          </p>
+          <p class="subtitle">
+            No more excuses to forget b-days!
+          </p>
+        </div>
+    </section>
+
+    <div class="container m-3">
+
+        <div class="field">
+            <label class="label">Person's Name (or Nickname)</label>
+            <input class="input" type="text" id="name" placeholder="e.g. Tommy Trojan">
+            <p id="nameError" class="help is-danger" style="display: none;">Please enter at least a single character*</p>
+        </div>
+
+        <div class="field">
+            <label class="label">Upcoming B-day</label>
+            <div class="control">
+                <input class="input" type="date" id="birthday" required> 
+                <p id="birthdayError" class="help is-danger" style="display: none;"></p>
+            </div>
+        </div>
+
+        <div class="field">
+            <label class="label">Reminder Date & Time</label>
+            <input class="input is-fullwidth" type="datetime-local" id="reminder" required> 
+            <p id="reminderError" class="help is-danger" style="display: none;"></p>
+        </div>
+    </div>
+
+    <div class="container m-3 has-text-centered">
+        <button class="button is-success is-fullwidth" id="saveBirthday">Save B-day</button>
+        <a class="button is-small is-text" href="popup.html" id="addBirthday">add b-day</a>
+        <a class="button is-small is-text" href="../showPopup/popup.html" id="showBirthday">b-day list</a>
+    </div>
+    
+</body>
+
+<script src="spacetime.min.js"></script>
+<script src="popup.js"></script>
+
+</html>
